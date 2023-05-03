@@ -19,3 +19,7 @@ npm i -D @arnaud-barre/tnode
   }
 }
 ```
+
+## Credit
+
+`preflight.cjs` & `tnode.cjs` is taken from [tsx](https://github.com/esbuild-kit/tsx)
