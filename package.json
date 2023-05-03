@@ -1,0 +1,25 @@
+{
+  "name": "@arnaud-barre/tnode",
+  "description": "Simple node wrapper that runs esbuild on TS files for ESM projects",
+  "version": "0.17.0",
+  "license": "MIT",
+  "type": "module",
+  "author": "Arnaud Barré (https://github.com/ArnaudBarre)",
+  "bin": {
+    "tnode": "tnode.cjs"
+  },
+  "files": [
+    "*.js",
+    "*.cjs"
+  ],
+  "repository": "github:ArnaudBarre/tnode",
+  "keywords": [
+    "node",
+    "typescript",
+    "esm",
+    "esbuild"
+  ],
+  "dependencies": {
+    "esbuild": "^0.17"
+  }
+}
