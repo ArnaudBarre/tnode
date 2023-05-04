@@ -13,6 +13,10 @@ export function resolve(specifier, context, nextResolve) {
 }
 
 export async function load(url, context, nextLoad) {
+  if (url.endsWith(".json")) {
+    const code = `export default ${readFileSync(fileURLToPath(url), "utf-8")}`;
+    return { format: "module", shortCircuit: true, source: code };
+  }
   if (!url.endsWith(".ts")) return nextLoad(url);
   const path = fileURLToPath(url);
   const { code, warnings } = await transform(readFileSync(path), {
