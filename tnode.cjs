@@ -18,4 +18,6 @@ spawn(
       "ipc", // parent-child communication
     ],
   }
-);
+).on('exit', (code) => {
+  if (code) process.exit(code)
+});
