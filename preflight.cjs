@@ -7,6 +7,9 @@ process.emit = function (event, warning) {
   ) {
     return;
   }
+  if (event === "warning" && warning.message.startsWith("`--experimental-loader` may be removed in the future;")) {
+    return;
+  }
   return Reflect.apply(emit, this, arguments);
 };
 process.setSourceMapsEnabled(true);
