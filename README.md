@@ -1,5 +1,8 @@
 # tnode [![npm](https://img.shields.io/npm/v/@arnaud-barre/tnode)](https://www.npmjs.com/package/@arnaud-barre/tnode)
 
+> [!CAUTION]
+> With node natively supporting TS 🎉, I don't use this anymore and I will not make update to it.
+
 Simple node wrapper that runs esbuild on TS files for ESM projects. Requires usage of explicit extensions. esbuild target is set to node 18.
 
 For CJS projects, see [@nabla/tnode](https://github.com/nabla/tnode)
